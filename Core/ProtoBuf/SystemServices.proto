@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+package DekCanvasServer.Core;
+
+service SystemServices {
+	rpc ResizeWindow (ResizeWindowRequest) returns (ResizeWindowResponse) {}
+}
+
+message ResizeWindowRequest {
+	int32 width = 1;
+	int32 height = 2;
+}
+
+message ResizeWindowResponse {}
+
